@@ -1,9 +1,3 @@
-#
-# Fiesta Exploit Kit traffic profile
-#   http://malware-traffic-analysis.net/2014/04/05/index.html
-#
-# Author: @harmj0y
-#
 
 set sleeptime "30000"; # use a ~30s delay between callbacks
 set jitter    "10"; # throw in a 10% jitter
@@ -47,7 +41,7 @@ http-post {
     client {
     
         # fake out a different user agent for the post back
-        header "User-Agent" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0"
+        header "User-Agent" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0";
 
         id {
             netbios;
