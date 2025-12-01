@@ -3,7 +3,10 @@ set sleeptime "30000"; # use a ~30s delay between callbacks
 set jitter    "10"; # throw in a 10% jitter
 set maxdns    "255";
 set useragent "Mozilla/4.0 (Windows 7 6.1) Java/1.7.0_11";
-
+https-certificate {
+    set SN "redpen.com"
+    set O "Red Pens LLC."
+}
 http-get {
 
     set uri "/login.php /profile.php /help.php /contactus.php /services.php /logout.php /clients.php /adjust-claim.php";
